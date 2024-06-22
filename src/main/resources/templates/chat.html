@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>My Spring Application</title>
+    <link rel="stylesheet" th:href="@{/css/chat.css}">
+    <script th:src="@{/js/chat.js}"></script>
+</head>
+<body>
+    <div class="chat_wrap">
+        <div class="header">CHAT</div>
+        <div class="chat"><ul></ul></div>
+        <div class="input-div">
+            <textarea placeholder="Press Enter for send message."></textarea>
+        </div>
+        <div class="chat format">
+            <ul>
+                <li>
+                    <div class="sender"><span></span></div>
+                    <div class="message"><span></span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
