@@ -3,8 +3,11 @@ package com.example.chartist.controller;
 import com.example.chartist.domain.dto.MemberCreateForm;
 import com.example.chartist.service.MemberService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.security.Principal;
 
 @Controller
 @RequestMapping("/member")
