@@ -14,7 +14,7 @@ public class ChatController {
 
     @GetMapping("")
     public String chat(){
-        return "chat";
+        return "new_chat";
     }
 
     @GetMapping("/new")
