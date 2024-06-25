@@ -14,12 +14,6 @@ public class ChatController {
 
     @GetMapping("")
     public String chat(){
-        return "new_chat";
-    }
-
-    @GetMapping("/new")
-    public String new_chat(Principal principal, Model model) {
-        model.addAttribute("user", principal.getName());
-        return "new_chat";
+        return "chat";
     }
 }
